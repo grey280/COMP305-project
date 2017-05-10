@@ -265,6 +265,44 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading4">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario4" aria-expanded="false" aria-controls="useCaseScenario4">
+								Evaluate Contract/Temporary Worker performance
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading4">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>In order to maintain high working standards, technicians evaluate the quality of work of the contract/temporary workers.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>A job has been completed. A contract/temporary worker was employed for the job. A technician accompanied them. The technician is logged in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The performance log for the contract/temporary worker has been updated.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins at the end of a job, when a technician accesses the system to log the performance of the contract/temporary worker(s) that was/were on the job.</p>
+							<ol>
+								<li>The technician requests a new contract/temporary worker review form.</li>
+								<li>The system provides the form, and the technician fills the form.</li>
+								<li>The technician completes the form, and the system saves it.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Technician cancels</dt>
+								<dd>The system reminds the technician of the company policy, that all contract/temporary workers should have their performance logged after all jobs, but the system will allow the technician to exit without logging the performance review.</dd>
+								<dt>Bad review</dt>
+								<dd>If the review of the worker is bad, their work is flagged for management to review and potentially remove them from the list of contract/temporary workers so as to avoid future low-quality work.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 
 
 			</div>
