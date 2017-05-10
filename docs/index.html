@@ -157,16 +157,17 @@
 		</div>
 		<div class="col-md-6">
 			<h2>Use Case Scenarios</h2>
+			<p>Click on the title of a use case scenario to view it.</p>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading1">
 						<h4 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario1" aria-expanded="true" aria-controls="useCaseScenario1">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario1" aria-expanded="true" aria-controls="useCaseScenario1">
 								Manage employee(s)
 							</a>
 						</h4>
 					</div>
-					<div id="useCaseScenario1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="useCaseScenarioHeading1">
+					<div id="useCaseScenario1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading1">
 						<div class="panel-body">
 							<dl class="dl-horizontal">
 								<dt>Summary</dt>
@@ -186,7 +187,7 @@
 								<li>The executive selects an employee to edit, or has the system create a new, blank employee record.</li>
 								<li>The executive edits the information, or fills in new information, and tells the system to save the changed record.</li>
 							</ol>
-							<h4>Alternate Flow</h4>
+							<h4>Alternate Flow(s)</h4>
 							<dl class="dl-horizontal">
 								<dt>Removing an employee</dt>
 								<dd>While editing the employee's information (step 3, above) the system provides an option to delete the employee record.</dd>
@@ -194,7 +195,41 @@
 						</div>
 					</div>
 				</div>
-				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading2">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario2" aria-expanded="false" aria-controls="useCaseScenario2">
+								Generate report
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading2">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Executives are able to generate reports on all aspects of the business in order to support hihg-level decision making.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>The executive needs a report. The executive is signed in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None.</dd>
+								<dt>Post-Conditions</dt>
+								<dd>A report has been generated.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when the executive requests that the system generate a report.</p>
+							<ol>
+								<li>The system requests information on which report to generate.</li>
+								<li>The executive provides the information about which report to generate, and the system generates the report.</li>
+								<li>If the executive desires, the report can be printed or saved as a PDF.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<p>None.</p>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 		<div class="col-md-6">
