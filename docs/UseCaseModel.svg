@@ -13,7 +13,7 @@
 		.st5 {fill:#5b9bd5;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st6 {fill:#ffffff;font-family:Calibri;font-size:1.00001em}
 		.st7 {stroke:#5592c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st8 {marker-end:url(#mrkr14-112);stroke:#5592c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st8 {marker-end:url(#mrkr14-139);stroke:#5592c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -25,7 +25,7 @@
 		<marker id="mrkr14-15" class="st4" refX="-18.12" orient="auto" markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend14" transform="scale(-6.04,-6.04) "/>
 		</marker>
-		<marker id="mrkr14-112" class="st4" refX="-17.4" orient="auto" markerUnits="strokeWidth" overflow="visible">
+		<marker id="mrkr14-139" class="st4" refX="-17.4" orient="auto" markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend14" transform="scale(-6.04,-6.04) "/>
 		</marker>
 	</defs>
@@ -188,50 +188,51 @@
 						 576.5 L28.8 612.5 L18 612.5 L18 583.7 L18 612.5 L7.2 612.5 ZM25.2 547.7 A7.2 7.2 -180 1 0 10.8 547.7 A7.2
 						 7.2 -180 1 0 25.2 547.7 Z" class="st1"/>
 			<text x="-5.29" y="627.3" class="st2">Executive</text>		</g>
-		<g id="shape43-107" transform="translate(66.2763,-529.132)">
-			<title>Generalization.43</title>
-			<path d="M1.41 612.5 C-50.79 627.85 -35.71 779.74 11.59 855.4 L11.78 855.7" class="st8"/>
-		</g>
-		<g id="shape44-113" transform="translate(256.683,-513.25)">
+		<g id="shape44-107" transform="translate(256.683,-513.25)">
 			<title>Use Case.44</title>
 			<desc>Generate report</desc>
 			<ellipse cx="54" cy="594.5" rx="54" ry="18" class="st5"/>
 			<text x="14.28" y="598.1" class="st6">Generate report</text>		</g>
-		<g id="shape45-116" transform="translate(103.683,-522.25)">
+		<g id="shape45-110" transform="translate(103.683,-522.25)">
 			<title>Association</title>
 			<path d="M0 603.5 L153 603.5" class="st7"/>
 		</g>
-		<g id="shape46-119" transform="translate(256.683,-558.25)">
+		<g id="shape46-113" transform="translate(256.683,-558.25)">
 			<title>Use Case.46</title>
 			<desc>Manage employees</desc>
 			<ellipse cx="54" cy="594.5" rx="54" ry="18" class="st5"/>
 			<text x="6.3" y="598.1" class="st6">Manage employees</text>		</g>
-		<g id="shape47-122" transform="translate(103.683,-534.85)">
+		<g id="shape47-116" transform="translate(103.683,-534.85)">
 			<title>Association.47</title>
 			<path d="M0 612.5 L160.7 580.36" class="st7"/>
 		</g>
-		<g id="shape48-125" transform="translate(505.532,-414)">
+		<g id="shape48-119" transform="translate(505.532,-414)">
 			<title>Actor.48</title>
 			<desc>Customer</desc>
 			<path d="M7.2 612.5 L7.2 576.5 L7.2 590.9 L0 590.9 L0 562.1 L3.6 558.5 L32.4 558.5 L36 562.1 L36 590.9 L28.8 590.9 L28.8
 						 576.5 L28.8 612.5 L18 612.5 L18 583.7 L18 612.5 L7.2 612.5 ZM25.2 547.7 A7.2 7.2 -180 1 0 10.8 547.7 A7.2
 						 7.2 -180 1 0 25.2 547.7 Z" class="st1"/>
 			<text x="-5.74" y="627.3" class="st2">Customer</text>		</g>
-		<g id="shape49-128" transform="translate(505.532,-444.693)">
+		<g id="shape49-122" transform="translate(505.532,-444.693)">
 			<title>Dynamic connector.49</title>
 			<path d="M0 612.5 L-154.4 658.02" class="st7"/>
 		</g>
-		<g id="shape50-131" transform="translate(505.532,-440.127)">
+		<g id="shape50-125" transform="translate(505.532,-440.127)">
 			<title>Dynamic connector.50</title>
 			<path d="M0 612.5 L-166.81 703.99" class="st7"/>
 		</g>
-		<g id="shape51-134" transform="translate(505.581,-435.6)">
+		<g id="shape51-128" transform="translate(505.581,-435.6)">
 			<title>Dynamic connector.51</title>
 			<path d="M0 612.5 L-174.18 752.23" class="st7"/>
 		</g>
-		<g id="shape52-137" transform="translate(512.732,-414)">
+		<g id="shape52-131" transform="translate(512.732,-414)">
 			<title>Dynamic connector.52</title>
 			<path d="M0 612.5 C-8.73 612.5 -28.99 682.48 -40.14 742.7 C-54.6 820.82 -53.73 882.5 -149.92 940.56" class="st7"/>
+		</g>
+		<g id="shape53-134" transform="translate(58.6825,-531.25)">
+			<title>Generalization.53</title>
+			<path d="M9 612.5 C-9.18 630.75 -14.82 702.97 -22.73 802.44 C-30.13 895.45 -39.52 1012.27 0.95 1040.35 L1.27 1040.51"
+					class="st8"/>
 		</g>
 	</g>
 </svg>
