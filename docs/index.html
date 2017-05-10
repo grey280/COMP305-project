@@ -161,14 +161,36 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Collapsible Group Item #1
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario1" aria-expanded="true" aria-controls="useCaseScenario1">
+								Manage employee(s)
 							</a>
 						</h4>
 					</div>
-					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div id="useCaseScenario1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Executives are able to hire and fire employees, and need to be able to manage employee records to do so.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>The executive needs to manage an employee's records. The executive must be logged in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The employee's records have been updated.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The use case begins when the executive requests that the system allow them to manage an employee's records.</p>
+							<ol>
+								<li>The system presents the executive with a list of all of the employees.</li>
+								<li>The executive selects an employee to edit, or has the system create a new, blank employee record.</li>
+								<li>The executive edits the information, or fills in new information, and tells the system to save the changed record.</li>
+							</ol>
+							<h4>Alternate Flow</h4>
+							<dl class="dl-horizontal">
+								<dt>Removing an employee</dt>
+								<dd>While editing the employee's information (step 3, above) the system provides an option to delete the employee record.</dd>
+							</dl>
 						</div>
 					</div>
 				</div>
