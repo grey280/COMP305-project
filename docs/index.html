@@ -228,6 +228,43 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading3">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario3" aria-expanded="false" aria-controls="useCaseScenario3">
+								Track equipment problems
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading3">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Technicians can use the system to track problems with equipment in order to make timely repairs or maintenance.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>A technician is available to work with the equipment. The technician is logged in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>All equipment problems should be logged upon the problem being discovered.</dd>
+								<dt>Post-Conditions</dt>
+								<dd>Equipment problems have been logged or, if previously logged, the damaged equipment is being repaired or replaced.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when a technician finishes a contract and returns with the equipment, or when the technician is going to repair any equipment that has been logged as damaged.</p>
+							<ol>
+								<li>The technician requests the list of equipment problems.</li>
+								<li>If logging a new problem, the technician requests a new, blank equipment problem form. If repairing an already-logged problem, the technician requests an existing equipment problem form.</li>
+								<li>The technician makes changes to the form as necessary, and saves the result.</li>
+								<li>If the equipment has been fully repaired, the problem is removed from the list.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="">
+								<dt>Equipment damaged beyond repair</dt>
+								<dd>The equipment is removed from the list of available equipment, and the technician notifies management so that a replacement, if necessary, may be ordered.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 
 
 			</div>
