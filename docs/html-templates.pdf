@@ -1,2 +1,38 @@
 <abbr class="initialism" title="Showtime Sound &amp; Lighting"><em>SSL</em></abbr>
 
+
+
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeadingN">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenarioN" aria-expanded="false" aria-controls="useCaseScenarioN">
+								title
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenarioN" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeadingN">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>summary</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>condition</dd>
+								<dt>Special Requirements</dt>
+								<dd>reqs</dd>
+								<dt>Post-Conditions</dt>
+								<dd>condition</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>intro</p>
+							<ol>
+								<li>list</li>
+							</ol>
+							<h4>Alternate Flow</h4>
+							<dl class="dl-horizontal">
+								<dt>Flow</dt>
+								<dd>Description</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
