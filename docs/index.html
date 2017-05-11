@@ -355,24 +355,27 @@
 						<div class="panel-body">
 							<dl class="dl-horizontal">
 								<dt>Summary</dt>
-								<dd>summary</dd>
+								<dd>Employees are able to generate orders, through which the system tracks purchases, rentals, and other transactions with customers.</dd>
 								<dt>Pre-Conditions</dt>
-								<dd>condition</dd>
+								<dd>A proposal has been generated and accepted by the customer.</dd>
 								<dt>Special Requirements</dt>
-								<dd>reqs</dd>
+								<dd>For complex orders, a manager may be required - varies with company policy.</dd>
 								<dt>Post-Conditions</dt>
-								<dd>condition</dd>
+								<dd>An order has been generated detailing the work to be done or the transaction to be completed.</dd>
 							</dl>
 							<h3>Flow of Events</h3>
 							<h4>Basic Flow</h4>
-							<p>intro</p>
+							<p>The flow begins when a customer accepts a proposal.</p>
 							<ol>
-								<li>list</li>
+								<li>The employee selects the accepted proposal from a list of accepted proposals.</li>
+								<li>The system uses the information in the accepted proposal to generate an order.</li>
+								<li>If any changes to the order need to be made, the employee makes the changes.</li>
+								<li>The employee or employees, depending upon the order, fulfill the order.</li>
 							</ol>
 							<h4>Alternate Flow(s)</h4>
 							<dl class="dl-horizontal">
-								<dt>Flow</dt>
-								<dd>Description</dd>
+								<dt>Order cancelled</dt>
+								<dd>If the customer cancels the order, it is marked as cancelled within the system. If it is necessary to generate an invoice for the time already billed on the order, that process is done.</dd>
 							</dl>
 						</div>
 					</div>
