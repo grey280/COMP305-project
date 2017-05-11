@@ -5,7 +5,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeadingN">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenarioN" aria-expanded="false" aria-controls="useCaseScenarioN">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenarioN" aria-expanded="false" aria-controls="useCaseScenarioN">
 								title
 							</a>
 						</h4>

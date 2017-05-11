@@ -155,14 +155,16 @@
 				<dd>Actors: Manager, Contract/Temporary Worker<br>Managers can view a list of all contract/temporary workers that <abbr class="initialism" title="Showtime Sound &amp; Lighting"><em>SSL</em></abbr> has in order to schedule them for a contract.</dd>
 			</dl>
 		</div>
-		<div class="col-md-6">
+		<div class="col-xs-12">
 			<h2>Use Case Scenarios</h2>
 			<p>Click on the title of a use case scenario to view it.</p>
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		</div>
+		<div class="col-md-6">
+			<div class="panel-group" id="useCaseScenarios1" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading1">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario1" aria-expanded="true" aria-controls="useCaseScenario1">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario1" aria-expanded="true" aria-controls="useCaseScenario1">
 								Manage employee(s)
 							</a>
 						</h4>
@@ -198,7 +200,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading2">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario2" aria-expanded="false" aria-controls="useCaseScenario2">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario2" aria-expanded="false" aria-controls="useCaseScenario2">
 								Generate report
 							</a>
 						</h4>
@@ -211,7 +213,7 @@
 								<dt>Pre-Conditions</dt>
 								<dd>The executive needs a report. The executive is signed in to the system.</dd>
 								<dt>Special Requirements</dt>
-								<dd>None.</dd>
+								<dd>None</dd>
 								<dt>Post-Conditions</dt>
 								<dd>A report has been generated.</dd>
 							</dl>
@@ -231,7 +233,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading3">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario3" aria-expanded="false" aria-controls="useCaseScenario3">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario3" aria-expanded="false" aria-controls="useCaseScenario3">
 								Track equipment problems
 							</a>
 						</h4>
@@ -268,7 +270,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading4">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario4" aria-expanded="false" aria-controls="useCaseScenario4">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario4" aria-expanded="false" aria-controls="useCaseScenario4">
 								Evaluate Contract/Temporary Worker performance
 							</a>
 						</h4>
@@ -306,7 +308,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="useCaseScenarioHeading5">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario5" aria-expanded="false" aria-controls="useCaseScenario5">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario5" aria-expanded="false" aria-controls="useCaseScenario5">
 								Generate proposal
 							</a>
 						</h4>
@@ -319,7 +321,7 @@
 								<dt>Pre-Conditions</dt>
 								<dd>A customer has requested a proposal for work. An employee has received the request.</dd>
 								<dt>Special Requirements</dt>
-								<dd>None.</dd>
+								<dd>None</dd>
 								<dt>Post-Conditions</dt>
 								<dd>A proposal for work has been generated and sent to the requesting customer.</dd>
 							</dl>
@@ -341,7 +343,83 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading6">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios1" href="#useCaseScenario6" aria-expanded="false" aria-controls="useCaseScenario6">
+								Generate invoice
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading6">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Employees generate invoices to be sent to customers, billing them for whatever order(s) the customer has not yet paid for.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>A customer has work that has not yet been paid for.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None</dd>
+								<dt>Post-Conditions</dt>
+								<dd>An invoice has been sent to the customer for the unpaid work.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when work for a customer on an order has been completed.</p>
+							<ol>
+								<li>The employee marks the order as completed but unpaid.</li>
+								<li>The employee requests that the system generate an invoice for the unpaid order.</li>
+								<li>The system sends the invoice to the customer.</li>
+								<li>The customer pays the invoice, and the order is marked as completed and paid.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Unpaid order</dt>
+								<dd>If the order is to be unpaid, a manager may override the system and skip the invoice-generation process.</dd>
+								<dt>Incorrect bill</dt>
+								<dd>If the bill is incorrect, a manager may override the system-generated invoice and replace the billed amount with a different amount.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel-group" id="useCaseScenarios2" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading7">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario7" aria-expanded="false" aria-controls="useCaseScenario7">
+								title
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading7">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>summary</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>condition</dd>
+								<dt>Special Requirements</dt>
+								<dd>reqs</dd>
+								<dt>Post-Conditions</dt>
+								<dd>condition</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>intro</p>
+							<ol>
+								<li>list</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Flow</dt>
+								<dd>Description</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6">
