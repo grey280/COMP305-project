@@ -461,10 +461,47 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading9">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario9" aria-expanded="false" aria-controls="useCaseScenario9">
+								View employee schedule(s)
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading9">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Managers can view employee schedules in order to ensure an employee is available to work on a scheduled contract.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>The manager is signed in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>Should only be used to check for contracts.</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The manager is aware of employee schedules, and may have scheduled an employee or employees to work on a contract.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when an employee needs to view schedules.</p>
+							<ol>
+								<li>The employee selects which schedules they want to see - their own for employees, or everyone's, for managers.</li>
+								<li>The system presents the requested information.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Insufficient Permissions</dt>
+								<dd>If someone without managerial access rights attempts to run the flow, the system will present them with their own schedule, but nobody else's. If someone who is not an employee attempts to run the flow, the system will refuse to show them any information.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 
-				
+
 			</div>
 		</div>
+	</div>
+	<div class="row">
 		<div class="col-md-6">
 			<h2>Class Diagrams</h2>
 		</div>
