@@ -496,8 +496,113 @@
 						</div>
 					</div>
 				</div>
-
-
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading10">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario10" aria-expanded="false" aria-controls="useCaseScenario10">
+								View rented equipment
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading10">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Managers can view a list of rented equipment in order to ensure the necessary equipment is available for a contract.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>A manager is logged in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The manager is aware of which equipment is rented and to whom.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when the manager wants to see which equipment is currently rented out.</p>
+							<ol>
+								<li>The manager requests a list of all rented-out equipment.</li>
+								<li>The system generates a list of all equipment that is currently rented out and displays it to the manager.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>No equipment rented</dt>
+								<dd>If no equipment is currently rented out, the system will inform the user that this is the case.</dd>
+								<dt>Equipment sold</dt>
+								<dd>If equipment that was out on rental has instead been sold to the renter, the sale is entered as a separate order (using the 'generate order' flow) and the rental is marked as complete.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading11">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario11" aria-expanded="false" aria-controls="useCaseScenario11">
+								View equipment rental history
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading11">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Managers can view a history of equipment rentals in order to project future use and make recommendations for or purchases of new equipment.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>The manager is signed in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>Assumes that equipment has, in the past, been rented out.</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The manager knows about the rental history.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when the manager wants to view a history of rentals.</p>
+							<ol>
+								<li>The manager selects the equipment or customer for which they want to view the rental history.</li>
+								<li>If the manager selected a piece of equipment, the system displays a list of all the times that piece of equipment was rented, and to whom.</li>
+								<li>If the manager selected a customer, the system displays a list of all the times that customer rented a piece of equipment, and which piece of equipment it was.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>No rentals</dt>
+								<dd>If no rentals have been logged in the system for the specified criteria, the system will inform the user of this.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading12">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario12" aria-expanded="false" aria-controls="useCaseScenario12">
+								title
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading12">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>summary</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>condition</dd>
+								<dt>Special Requirements</dt>
+								<dd>reqs</dd>
+								<dt>Post-Conditions</dt>
+								<dd>condition</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>intro</p>
+							<ol>
+								<li>list</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Flow</dt>
+								<dd>Description</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
