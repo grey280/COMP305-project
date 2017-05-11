@@ -303,7 +303,44 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading5">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#useCaseScenario5" aria-expanded="false" aria-controls="useCaseScenario5">
+								Generate proposal
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading5">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Employees are able to generate proposals for work, allowing <abbr class="initialism" title="Showtime Sound &amp; Lighting"><em>SSL</em></abbr> to submit a bid to the customer.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>A customer has requested a proposal for work. An employee has received the request.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None.</dd>
+								<dt>Post-Conditions</dt>
+								<dd>A proposal for work has been generated and sent to the requesting customer.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when a customer requests a proposal for work.</p>
+							<ol>
+								<li>The receiving employee opens a new proposal.</li>
+								<li>The employee fills out the proposal using the information given to them by the customer.</li>
+								<li>When the proposal has been filled out, it is sent to the customer for review.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Customer cancels</dt>
+								<dd>The order is marked as cancelled and removed from the system.</dd>
+								<dt>Insufficient information</dt>
+								<dd>The employee contacts the customer and asks for the necessary information.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
