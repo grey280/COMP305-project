@@ -421,9 +421,48 @@
 								<dd>If the bill is incorrect, a manager may override the system-generated invoice and replace the billed amount with a different amount.</dd>
 							</dl>
 						</div>
-						
 					</div>
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="useCaseScenarioHeading8">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#useCaseScenarios2" href="#useCaseScenario8" aria-expanded="false" aria-controls="useCaseScenario8">
+								Track hours worked
+							</a>
+						</h4>
+					</div>
+					<div id="useCaseScenario8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="useCaseScenarioHeading8">
+						<div class="panel-body">
+							<dl class="dl-horizontal">
+								<dt>Summary</dt>
+								<dd>Employees track the hours they have worked, as well as tracking the hours that contract/temporary workers have worked, ensuring they are paid the correct amount. Overtime may be tracked, as well.</dd>
+								<dt>Pre-Conditions</dt>
+								<dd>The employee is loged in to the system.</dd>
+								<dt>Special Requirements</dt>
+								<dd>None</dd>
+								<dt>Post-Conditions</dt>
+								<dd>The worked hours have been logged.</dd>
+							</dl>
+							<h3>Flow of Events</h3>
+							<h4>Basic Flow</h4>
+							<p>The flow begins when an employee or contract/temporary worker has logged hours.</p>
+							<ol>
+								<li>If logging their own hours, the employee selects themself from the list of employees and contract/temporary workers.</li>
+								<li>If logging hours worked by a contract/temporary worker, the employee selects the contract/temporary from the list.</li>
+								<li>The employee enters the start and end time worked and saves the result.</li>
+							</ol>
+							<h4>Alternate Flow(s)</h4>
+							<dl class="dl-horizontal">
+								<dt>Wrong User</dt>
+								<dd>If the employee attempts to log hours worked for someone they do not have permission to - another employee, for instance, that is not a contract/temporary worker - the system will not permit them to do so.</dd>
+								<dt>Impossible Time</dt>
+								<dd>If the employee attempts to log times that aren't possible - ending before it starts, for example - the system highlights the error and requests a correction.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				
 			</div>
 		</div>
 		<div class="col-md-6">
