@@ -102,15 +102,25 @@
 		<div class="col-md-5">
 			<h2>System Requirements</h2>
 			<ul>
-				<li>The system will enable employees to generate proposals, orders, and invoices.</li>
-				<li>The system will enable managers to view which equipment is currently rented, and to whom.</li>
-				<li>The system will enable managers to view a history of equipment rentals.</li>
-				<li>The system will enable managers to view employee schedules.</li>
-				<li>The system will enable managers to view and manage a list of available temporary workers.</li>
-				<li>The system will enable technicians to track hours worked by employees and contract workers.</li>
-				<li>The system will enable technicians to evaluate the performance of contract workers.</li>
-				<li>The system will enable technicians to track equipment problems that may need repairs or maintenance.</li>
+				<li>The system must be able to match customer requests and available equipment.</li>
+				<li>The system must be able to produce reports.</li>
+				<li>The system will enable an employee to login before using <li>the system.</li>
+				<li>The system will enable employees to generate bid proposals.</li>
+				<li>The system will enable employees to generate invoices.</li>
 				<li>The system will enable executives to generate reports to support decision making.</li>
+				<li>The system will enable an office manager to maintain customers.</li>
+				<li>The system will enable an office manager to maintain employees.</li>
+				<li>The system will enable an office manager to view employee schedules.</li>
+				<li>The system will enable an office manager to maintain contractors.</li>
+				<li>The system will enable an office manager to view current equipment being rented.</li>
+				<li>The system will enable an office manager to view a history of equipment rentals.</li>
+				<li>The system will enable a field technician to maintain consultations.</li>
+				<li>The system will enable a field technician to maintain installations.</li>
+				<li>The system will enable a field technician to evaluate the contractor’s performance.</li>
+				<li>The system will enable a field technician to note equipment problems.</li>
+				<li>The system will enable a customer to request a consultation.</li>
+				<li>The system will enable a customer to rent equipment.</li>
+				<li>The system will enable a customer to buy equipment.</li>
 			</ul>
 		</div>
 		<div class="col-md-7">
@@ -129,30 +139,81 @@
 		<div class="col-md-5">
 			<h2>Use Cases</h2>
 			<dl>
-				<dt>Manage employees</dt>
-				<dd>Actors: Executive, Employee(s)<br>Executives are able to hire and fire employees, and need to be able to manage employee records to do so.</dd>
-				<dt>Generate report</dt>
-				<dd>Actors: Executive<br>Executives are able to generate reports on all aspects of the business in order to support hihg-level decision making.</dd>
-				<dt>Track equipment problems</dt>
-				<dd>Actors: Technician, Equipment<br>Technicians use the system to track problems with equipment in order to make timely repairs or maintenance.</dd>
-				<dt>Evaluate Contract/Temporary Worker performance</dt>
-				<dd>Actors: Technician, Contract/Temporary Worker<br>In order to maintain high working standards, technicians evaluate the quality of work of the contract/temporary workers.</dd>
-				<dt>Generate proposal</dt>
-				<dd>Actors: Employee, Customer<br>Employees are able to generate proposals for work, allowing <abbr class="initialism" title="Showtime Sound &amp; Lighting"><em>SSL</em></abbr> to submit a bid to the customer.</dd>
-				<dt>Generate order</dt>
-				<dd>Actors: Employee, Customer<br>Employees are able to generate orders, through which the system tracks purchases, rentals, and other transactions with customers.</dd>
+				<dt>Login to system</dt>
+				<dd>Actors: Employees, system<br>
+				Employees have their own unique username and password with which they can access the system.</dd>
+
+				<dt>Generate bid proposal</dt>
+				<dd>Actors: Employee, Customer<br>
+				Employees are able to generate proposals for work, allowing SSL to submit a bid to the customer.</dd>
+
 				<dt>Generate invoice</dt>
-				<dd>Actors: Employee, Customer<br>Employees generate invoices to be sent to customers, billing them for whatever order(s) the customer has not yet paid for.</dd>
+				<dd>Actors: Employee, Customer<br>
+				Employees generate invoices to be sent to customers, billing them for whatever order(s) the customer has not yet paid for.</dd>
+
 				<dt>Track hours worked</dt>
-				<dd>Actors: Employee, Contract/Temporary Worker<br>Employees track the hours they have worked, as well as tracking the hours that contract/temporary workers have worked, ensuring they are paid the correct amount. Overtime may be tracked, as well.</dd>
+				<dd>Actors: Employee, Contract/Temporary Worker<br>
+				Employees track the hours they have worked, as well as tracking the hours that contract/temporary workers have worked, ensuring they are paid the correct amount. Overtime may be tracked, as well.</dd>
+
+				<dt>Generate report</dt>
+				<dd>Actors: Executive<br>
+				Executives are able to generate reports on all aspects of the business in order to support high-level decision making.</dd>
+
+				<dt>Maintain customers</dt>
+				<dd>Actors: Office manager (manager), customer<br>
+				Managers add, update and delete customers from the database.</dd>
+
+				<dt>Maintain employee</dt>
+				<dd>Actors: Manager, employee<br>
+				Managers add, update and delete employees from the database.</dd>
+
+				<dt>Maintain contractors</dt>
+				<dd>Actors: Manager, contractors<br>
+				Managers add, update and delete contractors from the database.</dd>
+					
 				<dt>View employee schedule(s)</dt>
-				<dd>Actors: Manager, Employee<br>Managers can view employee schedules in order to ensure an employee is available to work on a scheduled contract.</dd>
-				<dt>View rented equipment</dt>
-				<dd>Actors: Manager, Equipment<br>Managers can view a list of rented equipment in order to ensure the necessary equipment is available for a contract.</dd>
-				<dt>View equipment rental history</dt>
-				<dd>Actors: Manager, Customer, Equipment<br>Managers can view a history of equipment rentals in order to project future use and make recommendations for or purchases of new equipment.</dd>
+				<dd>Actors: Manager, Employee<br>
+				Managers can view employee schedules in order to ensure an employee is available to work on a scheduled contract.</dd>
+					
 				<dt>View Contract/Temporary Worker list</dt>
-				<dd>Actors: Manager, Contract/Temporary Worker<br>Managers can view a list of all contract/temporary workers that <abbr class="initialism" title="Showtime Sound &amp; Lighting"><em>SSL</em></abbr> has in order to schedule them for a contract.</dd>
+				<dd>Actors: Manager, Contract/Temporary Worker<br>
+				Managers can view a list of all contract/temporary workers that SSL has in order to schedule them for a contract.</dd>
+
+				<dt>View rented equipment</dt>
+				<dd>Actors: Manager, Equipment<br>
+				Managers can view a list of rented equipment in order to ensure the necessary equipment is available for a contract.</dd>
+
+				<dt>View equipment rental history</dt>
+				<dd>Actors: Manager, Customer, Equipment<br>
+				Managers can view a history of equipment rentals in order to project future use and make recommendations for or purchases of new equipment.</dd>
+
+				<dt>Maintain consultations</dt>
+				<dd>Actors: Technician, customer<br>
+				Technicians add, update, and delete consultations from the database.</dd>
+
+				<dt>Maintain installations</dt>
+				<dd>Actors: Technician, customer<br>
+				Technicians add, update, and delete installations from the database.</dd>
+
+				<dt>Note equipment problems</dt>
+				<dd>Actors: Technician<br>
+				Technicians write down any equipment problems they may encounter during a consultation or installation.</dd>
+
+				<dt>Request consultation</dt>
+				<dd>Actors: Customer, technician<br>
+				Customers can request a technician to survey the current equipment.</dd>
+
+				<dt>Request instillation</dt>
+				<dd>Actors: Customer, technician<br>
+				Customers can request a technician to install rented equipment or bought equipment.</dd>
+
+				<dt>Rent equipment</dt>
+				<dd>Actors: Customers<br>
+				Customers can borrow equipment from SSL for an allotted time.</dd>
+
+				<dt>Buy equipment</dt>
+				<dd>Actors: Customers, technicians<br>
+				Customers can buy equipment from SSL with help from a technician if it’s cheaper than renting equipment.</dd>
 			</dl>
 		</div>
 		<div class="col-xs-12">
