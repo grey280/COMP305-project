@@ -2,7 +2,10 @@ Classes.md: List of the classes that will be used. To be converted to class diag
 
 # Employee
 ## Fields
-
+username: String
+password: (hashed) String
+contactPhone: String
+contactEmail: String
 ## Relationships
 
 
@@ -12,17 +15,22 @@ Classes.md: List of the classes that will be used. To be converted to class diag
 ## Relationships
 
 
-# Manager: Employee
+# Office Manager: Employee
 ## Fields
 
 ## Relationships
 
 
-# Executive: Manager
+# Vice President: Manager
 ## Fields
 
 ## Relationships
 
+
+# Contractor: Employee
+## Fields
+
+## Relationships
 
 # Customer
 ## Fields
