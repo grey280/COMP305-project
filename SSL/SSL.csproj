@@ -65,6 +65,12 @@
     <Compile Include="ExecutiveMenu.Designer.cs">
       <DependentUpon>ExecutiveMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Installation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Installation.Designer.cs">
+      <DependentUpon>Installation.cs</DependentUpon>
+    </Compile>
     <Compile Include="InvoiceForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExecutiveMenu.resx">
       <DependentUpon>ExecutiveMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Installation.resx">
+      <DependentUpon>Installation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>

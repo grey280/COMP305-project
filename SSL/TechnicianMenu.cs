@@ -27,5 +27,11 @@ namespace SSL
             Consultation frmConsultation = new Consultation();
             frmConsultation.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Installation frmInstallation = new Installation();
+            frmInstallation.Show();
+        }
     }
 }
