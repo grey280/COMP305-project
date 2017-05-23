@@ -535,5 +535,45 @@
 				<path d="M0 849.94 L0 895.13 L-173.25 895.13 L-173.25 1232.91 L-450.38 1232.91" class="st12"/>
 			</g>
 		</g>
+		<g id="group218-337" transform="translate(250.875,-771.934)">
+			<title>Class.218</title>
+			<desc>HoursWorked</desc>
+			<g id="shape219-338">
+				<title>Sheet.219</title>
+				<path d="M0 849.94 L180 849.94 L180 821.43 L0 821.43 L0 849.94 Z" class="st1"/>
+			</g>
+			<g id="shape220-340" transform="translate(0,-28.5037)">
+				<title>Sheet.220</title>
+				<path d="M0 849.94 L180 849.94 L180 818.44 L0 818.44 L0 849.94 Z" class="st2"/>
+			</g>
+			<g id="shape222-342" transform="translate(171,-60.0037)">
+				<title>Sheet.222</title>
+				<desc>parameter</desc>
+			</g>
+			<g id="shape218-343">
+				<text x="4" y="809.28" class="st3">HoursWorked</text>			</g>
+		</g>
+		<g id="shape225-345" transform="translate(253.125,-774.184)">
+			<title>Member.225</title>
+			<desc>-dateIn -dateOut</desc>
+			<rect x="0" y="825.934" width="175.5" height="24.0037" class="st4"/>
+			<rect x="0" y="825.934" width="175.5" height="24.0037" class="st5"/>
+			<text x="9" y="834.94" class="st6">-dateIn <tspan x="9" dy="1.2em" class="st7">-</tspan>dateOut</text>		</g>
+		<g id="group226-350" transform="translate(250.875,-801.936)">
+			<title>Association.226</title>
+			<g id="shape228-351" transform="translate(-12.6091,-5.09117)">
+				<title>Sheet.228</title>
+				<desc>1</desc>
+				<rect x="0.906097" y="840.336" width="4.05478" height="9.59985" class="st13"/>
+				<text x="0.91" y="847.54" class="st14">1</text>			</g>
+			<g id="shape229-354" transform="translate(-44.4454,73.5679)">
+				<title>Sheet.229</title>
+				<desc>0..*</desc>
+				<rect x="0.906097" y="840.336" width="12.0784" height="9.59985" class="st13"/>
+				<text x="0.91" y="847.54" class="st14">0..*</text>			</g>
+			<g id="shape226-357">
+				<path d="M0 849.94 L-36 849.94 L-36 908.81 L-51.19 908.81" class="st12"/>
+			</g>
+		</g>
 	</g>
 </svg>
