@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaintainEquipment));
             System.Windows.Forms.Label equipmentIDLabel;
             System.Windows.Forms.Label equipmentTypeLabel;
             System.Windows.Forms.Label equipmentRentalCostLabel;
@@ -38,16 +37,17 @@
             System.Windows.Forms.Label equipmentConditionLabel;
             System.Windows.Forms.Label equipmentCommentsLabel;
             System.Windows.Forms.Label rentedToLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaintainEquipment));
             this.sSLDataSet = new SSL.SSLDataSet();
             this.equipmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.equipmentTableAdapter = new SSL.SSLDataSetTableAdapters.EquipmentTableAdapter();
             this.tableAdapterManager = new SSL.SSLDataSetTableAdapters.TableAdapterManager();
             this.equipmentBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -74,6 +74,86 @@
             ((System.ComponentModel.ISupportInitialize)(this.equipmentBindingNavigator)).BeginInit();
             this.equipmentBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // equipmentIDLabel
+            // 
+            equipmentIDLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentIDLabel.AutoSize = true;
+            equipmentIDLabel.Location = new System.Drawing.Point(45, 37);
+            equipmentIDLabel.Name = "equipmentIDLabel";
+            equipmentIDLabel.Size = new System.Drawing.Size(74, 13);
+            equipmentIDLabel.TabIndex = 1;
+            equipmentIDLabel.Text = "Equipment ID:";
+            // 
+            // equipmentTypeLabel
+            // 
+            equipmentTypeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentTypeLabel.AutoSize = true;
+            equipmentTypeLabel.Location = new System.Drawing.Point(45, 63);
+            equipmentTypeLabel.Name = "equipmentTypeLabel";
+            equipmentTypeLabel.Size = new System.Drawing.Size(87, 13);
+            equipmentTypeLabel.TabIndex = 3;
+            equipmentTypeLabel.Text = "Equipment Type:";
+            // 
+            // equipmentRentalCostLabel
+            // 
+            equipmentRentalCostLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentRentalCostLabel.AutoSize = true;
+            equipmentRentalCostLabel.Location = new System.Drawing.Point(45, 89);
+            equipmentRentalCostLabel.Name = "equipmentRentalCostLabel";
+            equipmentRentalCostLabel.Size = new System.Drawing.Size(118, 13);
+            equipmentRentalCostLabel.TabIndex = 5;
+            equipmentRentalCostLabel.Text = "Equipment Rental Cost:";
+            // 
+            // equipmentBuyCostLabel
+            // 
+            equipmentBuyCostLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentBuyCostLabel.AutoSize = true;
+            equipmentBuyCostLabel.Location = new System.Drawing.Point(45, 115);
+            equipmentBuyCostLabel.Name = "equipmentBuyCostLabel";
+            equipmentBuyCostLabel.Size = new System.Drawing.Size(105, 13);
+            equipmentBuyCostLabel.TabIndex = 7;
+            equipmentBuyCostLabel.Text = "Equipment Buy Cost:";
+            // 
+            // equipmentMaintenanceDateLabel
+            // 
+            equipmentMaintenanceDateLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentMaintenanceDateLabel.AutoSize = true;
+            equipmentMaintenanceDateLabel.Location = new System.Drawing.Point(45, 142);
+            equipmentMaintenanceDateLabel.Name = "equipmentMaintenanceDateLabel";
+            equipmentMaintenanceDateLabel.Size = new System.Drawing.Size(151, 13);
+            equipmentMaintenanceDateLabel.TabIndex = 9;
+            equipmentMaintenanceDateLabel.Text = "Equipment Maintenance Date:";
+            // 
+            // equipmentConditionLabel
+            // 
+            equipmentConditionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentConditionLabel.AutoSize = true;
+            equipmentConditionLabel.Location = new System.Drawing.Point(45, 167);
+            equipmentConditionLabel.Name = "equipmentConditionLabel";
+            equipmentConditionLabel.Size = new System.Drawing.Size(107, 13);
+            equipmentConditionLabel.TabIndex = 11;
+            equipmentConditionLabel.Text = "Equipment Condition:";
+            // 
+            // equipmentCommentsLabel
+            // 
+            equipmentCommentsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            equipmentCommentsLabel.AutoSize = true;
+            equipmentCommentsLabel.Location = new System.Drawing.Point(45, 193);
+            equipmentCommentsLabel.Name = "equipmentCommentsLabel";
+            equipmentCommentsLabel.Size = new System.Drawing.Size(112, 13);
+            equipmentCommentsLabel.TabIndex = 13;
+            equipmentCommentsLabel.Text = "Equipment Comments:";
+            // 
+            // rentedToLabel
+            // 
+            rentedToLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            rentedToLabel.AutoSize = true;
+            rentedToLabel.Location = new System.Drawing.Point(45, 219);
+            rentedToLabel.Name = "rentedToLabel";
+            rentedToLabel.Size = new System.Drawing.Size(61, 13);
+            rentedToLabel.TabIndex = 15;
+            rentedToLabel.Text = "Rented To:";
             // 
             // sSLDataSet
             // 
@@ -131,6 +211,13 @@
             this.equipmentBindingNavigator.TabIndex = 0;
             this.equipmentBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -163,16 +250,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -195,7 +275,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // equipmentBindingNavigatorSaveItem
@@ -206,95 +286,45 @@
             this.equipmentBindingNavigatorSaveItem.Text = "Save Data";
             this.equipmentBindingNavigatorSaveItem.Click += new System.EventHandler(this.equipmentBindingNavigatorSaveItem_Click);
             // 
-            // equipmentIDLabel
-            // 
-            equipmentIDLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentIDLabel.AutoSize = true;
-            equipmentIDLabel.Location = new System.Drawing.Point(45, 37);
-            equipmentIDLabel.Name = "equipmentIDLabel";
-            equipmentIDLabel.Size = new System.Drawing.Size(74, 13);
-            equipmentIDLabel.TabIndex = 1;
-            equipmentIDLabel.Text = "Equipment ID:";
-            // 
             // equipmentIDTextBox
             // 
             this.equipmentIDTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.equipmentIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipmentBindingSource, "EquipmentID", true));
-            this.equipmentIDTextBox.Enabled = false;
             this.equipmentIDTextBox.Location = new System.Drawing.Point(202, 34);
             this.equipmentIDTextBox.Name = "equipmentIDTextBox";
+            this.equipmentIDTextBox.ReadOnly = true;
             this.equipmentIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentIDTextBox.TabIndex = 2;
-            // 
-            // equipmentTypeLabel
-            // 
-            equipmentTypeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentTypeLabel.AutoSize = true;
-            equipmentTypeLabel.Location = new System.Drawing.Point(45, 63);
-            equipmentTypeLabel.Name = "equipmentTypeLabel";
-            equipmentTypeLabel.Size = new System.Drawing.Size(87, 13);
-            equipmentTypeLabel.TabIndex = 3;
-            equipmentTypeLabel.Text = "Equipment Type:";
             // 
             // equipmentTypeTextBox
             // 
             this.equipmentTypeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.equipmentTypeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipmentBindingSource, "EquipmentType", true));
-            this.equipmentTypeTextBox.Enabled = false;
             this.equipmentTypeTextBox.Location = new System.Drawing.Point(202, 60);
             this.equipmentTypeTextBox.Name = "equipmentTypeTextBox";
+            this.equipmentTypeTextBox.ReadOnly = true;
             this.equipmentTypeTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentTypeTextBox.TabIndex = 4;
-            // 
-            // equipmentRentalCostLabel
-            // 
-            equipmentRentalCostLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentRentalCostLabel.AutoSize = true;
-            equipmentRentalCostLabel.Location = new System.Drawing.Point(45, 89);
-            equipmentRentalCostLabel.Name = "equipmentRentalCostLabel";
-            equipmentRentalCostLabel.Size = new System.Drawing.Size(118, 13);
-            equipmentRentalCostLabel.TabIndex = 5;
-            equipmentRentalCostLabel.Text = "Equipment Rental Cost:";
             // 
             // equipmentRentalCostTextBox
             // 
             this.equipmentRentalCostTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.equipmentRentalCostTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipmentBindingSource, "EquipmentRentalCost", true));
-            this.equipmentRentalCostTextBox.Enabled = false;
             this.equipmentRentalCostTextBox.Location = new System.Drawing.Point(202, 86);
             this.equipmentRentalCostTextBox.Name = "equipmentRentalCostTextBox";
+            this.equipmentRentalCostTextBox.ReadOnly = true;
             this.equipmentRentalCostTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentRentalCostTextBox.TabIndex = 6;
-            // 
-            // equipmentBuyCostLabel
-            // 
-            equipmentBuyCostLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentBuyCostLabel.AutoSize = true;
-            equipmentBuyCostLabel.Location = new System.Drawing.Point(45, 115);
-            equipmentBuyCostLabel.Name = "equipmentBuyCostLabel";
-            equipmentBuyCostLabel.Size = new System.Drawing.Size(105, 13);
-            equipmentBuyCostLabel.TabIndex = 7;
-            equipmentBuyCostLabel.Text = "Equipment Buy Cost:";
             // 
             // equipmentBuyCostTextBox
             // 
             this.equipmentBuyCostTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.equipmentBuyCostTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipmentBindingSource, "EquipmentBuyCost", true));
-            this.equipmentBuyCostTextBox.Enabled = false;
             this.equipmentBuyCostTextBox.Location = new System.Drawing.Point(202, 112);
             this.equipmentBuyCostTextBox.Name = "equipmentBuyCostTextBox";
+            this.equipmentBuyCostTextBox.ReadOnly = true;
             this.equipmentBuyCostTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentBuyCostTextBox.TabIndex = 8;
-            // 
-            // equipmentMaintenanceDateLabel
-            // 
-            equipmentMaintenanceDateLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentMaintenanceDateLabel.AutoSize = true;
-            equipmentMaintenanceDateLabel.Location = new System.Drawing.Point(45, 142);
-            equipmentMaintenanceDateLabel.Name = "equipmentMaintenanceDateLabel";
-            equipmentMaintenanceDateLabel.Size = new System.Drawing.Size(151, 13);
-            equipmentMaintenanceDateLabel.TabIndex = 9;
-            equipmentMaintenanceDateLabel.Text = "Equipment Maintenance Date:";
             // 
             // equipmentMaintenanceDateDateTimePicker
             // 
@@ -305,16 +335,6 @@
             this.equipmentMaintenanceDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.equipmentMaintenanceDateDateTimePicker.TabIndex = 10;
             // 
-            // equipmentConditionLabel
-            // 
-            equipmentConditionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentConditionLabel.AutoSize = true;
-            equipmentConditionLabel.Location = new System.Drawing.Point(45, 167);
-            equipmentConditionLabel.Name = "equipmentConditionLabel";
-            equipmentConditionLabel.Size = new System.Drawing.Size(107, 13);
-            equipmentConditionLabel.TabIndex = 11;
-            equipmentConditionLabel.Text = "Equipment Condition:";
-            // 
             // equipmentConditionTextBox
             // 
             this.equipmentConditionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -324,16 +344,6 @@
             this.equipmentConditionTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentConditionTextBox.TabIndex = 12;
             // 
-            // equipmentCommentsLabel
-            // 
-            equipmentCommentsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            equipmentCommentsLabel.AutoSize = true;
-            equipmentCommentsLabel.Location = new System.Drawing.Point(45, 193);
-            equipmentCommentsLabel.Name = "equipmentCommentsLabel";
-            equipmentCommentsLabel.Size = new System.Drawing.Size(112, 13);
-            equipmentCommentsLabel.TabIndex = 13;
-            equipmentCommentsLabel.Text = "Equipment Comments:";
-            // 
             // equipmentCommentsTextBox
             // 
             this.equipmentCommentsTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -342,16 +352,6 @@
             this.equipmentCommentsTextBox.Name = "equipmentCommentsTextBox";
             this.equipmentCommentsTextBox.Size = new System.Drawing.Size(200, 20);
             this.equipmentCommentsTextBox.TabIndex = 14;
-            // 
-            // rentedToLabel
-            // 
-            rentedToLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            rentedToLabel.AutoSize = true;
-            rentedToLabel.Location = new System.Drawing.Point(45, 219);
-            rentedToLabel.Name = "rentedToLabel";
-            rentedToLabel.Size = new System.Drawing.Size(61, 13);
-            rentedToLabel.TabIndex = 15;
-            rentedToLabel.Text = "Rented To:";
             // 
             // rentedToTextBox
             // 

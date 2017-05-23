@@ -59,6 +59,12 @@
     <Compile Include="Consultation.Designer.cs">
       <DependentUpon>Consultation.cs</DependentUpon>
     </Compile>
+    <Compile Include="EvaluateContractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvaluateContractor.Designer.cs">
+      <DependentUpon>EvaluateContractor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExecutiveMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="Consultation.resx">
       <DependentUpon>Consultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvaluateContractor.resx">
+      <DependentUpon>EvaluateContractor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExecutiveMenu.resx">
       <DependentUpon>ExecutiveMenu.cs</DependentUpon>

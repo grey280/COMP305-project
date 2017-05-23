@@ -989,6 +989,8 @@ namespace SSL {
             
             private global::System.Data.DataColumn columnHiredBy;
             
+            private global::System.Data.DataColumn columnContractorComments;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public ContractorDataTable() {
@@ -1112,6 +1114,14 @@ namespace SSL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ContractorCommentsColumn {
+                get {
+                    return this.columnContractorComments;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1147,7 +1157,7 @@ namespace SSL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ContractorRow AddContractorRow(string ContractorName, string ContractorAddress, string ContractorCity, string ContractorState, string ContractorZip, string ContractorPhone, string ContractorEmail, string ContractorSkills, string ContractorOrganization, EmployeeRow parentEmployeeRowByEmployeeContractor) {
+            public ContractorRow AddContractorRow(string ContractorName, string ContractorAddress, string ContractorCity, string ContractorState, string ContractorZip, string ContractorPhone, string ContractorEmail, string ContractorSkills, string ContractorOrganization, EmployeeRow parentEmployeeRowByEmployeeContractor, string ContractorComments) {
                 ContractorRow rowContractorRow = ((ContractorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1160,7 +1170,8 @@ namespace SSL {
                         ContractorEmail,
                         ContractorSkills,
                         ContractorOrganization,
-                        null};
+                        null,
+                        ContractorComments};
                 if ((parentEmployeeRowByEmployeeContractor != null)) {
                     columnValuesArray[10] = parentEmployeeRowByEmployeeContractor[0];
                 }
@@ -1204,6 +1215,7 @@ namespace SSL {
                 this.columnContractorSkills = base.Columns["ContractorSkills"];
                 this.columnContractorOrganization = base.Columns["ContractorOrganization"];
                 this.columnHiredBy = base.Columns["HiredBy"];
+                this.columnContractorComments = base.Columns["ContractorComments"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1231,6 +1243,8 @@ namespace SSL {
                 base.Columns.Add(this.columnContractorOrganization);
                 this.columnHiredBy = new global::System.Data.DataColumn("HiredBy", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHiredBy);
+                this.columnContractorComments = new global::System.Data.DataColumn("ContractorComments", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnContractorComments);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnContractorID}, true));
                 this.columnContractorID.AutoIncrement = true;
@@ -1247,6 +1261,7 @@ namespace SSL {
                 this.columnContractorEmail.MaxLength = 255;
                 this.columnContractorSkills.MaxLength = 536870910;
                 this.columnContractorOrganization.MaxLength = 255;
+                this.columnContractorComments.MaxLength = 536870910;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4280,6 +4295,22 @@ namespace SSL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ContractorComments {
+                get {
+                    try {
+                        return ((string)(this[this.tableContractor.ContractorCommentsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ContractorComments\' in table \'Contractor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableContractor.ContractorCommentsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public EmployeeRow EmployeeRow {
                 get {
                     return ((EmployeeRow)(this.GetParentRow(this.Table.ParentRelations["EmployeeContractor"])));
@@ -4407,6 +4438,18 @@ namespace SSL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetHiredByNull() {
                 this[this.tableContractor.HiredByColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsContractorCommentsNull() {
+                return this.IsNull(this.tableContractor.ContractorCommentsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetContractorCommentsNull() {
+                this[this.tableContractor.ContractorCommentsColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6881,6 +6924,7 @@ namespace SSL.SSLDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("ContractorSkills", "ContractorSkills");
             tableMapping.ColumnMappings.Add("ContractorOrganization", "ContractorOrganization");
             tableMapping.ColumnMappings.Add("HiredBy", "HiredBy");
+            tableMapping.ColumnMappings.Add("ContractorComments", "ContractorComments");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -6905,10 +6949,7 @@ namespace SSL.SSLDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HiredBy", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HiredBy", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Contractor` (`ContractorName`, `ContractorAddress`, `ContractorCity`" +
-                ", `ContractorState`, `ContractorZip`, `ContractorPhone`, `ContractorEmail`, `Con" +
-                "tractorSkills`, `ContractorOrganization`, `HiredBy`) VALUES (?, ?, ?, ?, ?, ?, ?" +
-                ", ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `Contractor` (`ContractorName`, `ContractorAddress`, `ContractorCity`, `ContractorState`, `ContractorZip`, `ContractorPhone`, `ContractorEmail`, `ContractorSkills`, `ContractorOrganization`, `HiredBy`, `ContractorComments`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorAddress", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorAddress", global::System.Data.DataRowVersion.Current, false, null));
@@ -6920,9 +6961,10 @@ namespace SSL.SSLDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorSkills", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorSkills", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorOrganization", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorOrganization", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HiredBy", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HiredBy", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorComments", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorComments", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Contractor` SET `ContractorName` = ?, `ContractorAddress` = ?, `ContractorCity` = ?, `ContractorState` = ?, `ContractorZip` = ?, `ContractorPhone` = ?, `ContractorEmail` = ?, `ContractorSkills` = ?, `ContractorOrganization` = ?, `HiredBy` = ? WHERE ((`ContractorID` = ?) AND ((? = 1 AND `ContractorName` IS NULL) OR (`ContractorName` = ?)) AND ((? = 1 AND `ContractorCity` IS NULL) OR (`ContractorCity` = ?)) AND ((? = 1 AND `ContractorState` IS NULL) OR (`ContractorState` = ?)) AND ((? = 1 AND `ContractorZip` IS NULL) OR (`ContractorZip` = ?)) AND ((? = 1 AND `ContractorPhone` IS NULL) OR (`ContractorPhone` = ?)) AND ((? = 1 AND `ContractorEmail` IS NULL) OR (`ContractorEmail` = ?)) AND ((? = 1 AND `ContractorOrganization` IS NULL) OR (`ContractorOrganization` = ?)) AND ((? = 1 AND `HiredBy` IS NULL) OR (`HiredBy` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Contractor` SET `ContractorName` = ?, `ContractorAddress` = ?, `ContractorCity` = ?, `ContractorState` = ?, `ContractorZip` = ?, `ContractorPhone` = ?, `ContractorEmail` = ?, `ContractorSkills` = ?, `ContractorOrganization` = ?, `HiredBy` = ?, `ContractorComments` = ? WHERE ((`ContractorID` = ?) AND ((? = 1 AND `ContractorName` IS NULL) OR (`ContractorName` = ?)) AND ((? = 1 AND `ContractorCity` IS NULL) OR (`ContractorCity` = ?)) AND ((? = 1 AND `ContractorState` IS NULL) OR (`ContractorState` = ?)) AND ((? = 1 AND `ContractorZip` IS NULL) OR (`ContractorZip` = ?)) AND ((? = 1 AND `ContractorPhone` IS NULL) OR (`ContractorPhone` = ?)) AND ((? = 1 AND `ContractorEmail` IS NULL) OR (`ContractorEmail` = ?)) AND ((? = 1 AND `ContractorOrganization` IS NULL) OR (`ContractorOrganization` = ?)) AND ((? = 1 AND `HiredBy` IS NULL) OR (`HiredBy` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorAddress", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorAddress", global::System.Data.DataRowVersion.Current, false, null));
@@ -6934,6 +6976,7 @@ namespace SSL.SSLDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorSkills", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorSkills", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorOrganization", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorOrganization", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HiredBy", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HiredBy", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ContractorComments", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorComments", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ContractorID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ContractorName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorName", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ContractorName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ContractorName", global::System.Data.DataRowVersion.Original, false, null));
@@ -6968,7 +7011,7 @@ namespace SSL.SSLDataSetTableAdapters {
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ContractorID, ContractorName, ContractorAddress, ContractorCity, Contracto" +
                 "rState, ContractorZip, ContractorPhone, ContractorEmail, ContractorSkills, Contr" +
-                "actorOrganization, HiredBy FROM Contractor";
+                "actorOrganization, HiredBy, ContractorComments FROM Contractor";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7110,7 +7153,7 @@ namespace SSL.SSLDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ContractorName, string ContractorAddress, string ContractorCity, string ContractorState, string ContractorZip, string ContractorPhone, string ContractorEmail, string ContractorSkills, string ContractorOrganization, global::System.Nullable<int> HiredBy) {
+        public virtual int Insert(string ContractorName, string ContractorAddress, string ContractorCity, string ContractorState, string ContractorZip, string ContractorPhone, string ContractorEmail, string ContractorSkills, string ContractorOrganization, global::System.Nullable<int> HiredBy, string ContractorComments) {
             if ((ContractorName == null)) {
                 throw new global::System.ArgumentNullException("ContractorName");
             }
@@ -7171,6 +7214,12 @@ namespace SSL.SSLDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
+            if ((ContractorComments == null)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(ContractorComments));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7202,6 +7251,7 @@ namespace SSL.SSLDataSetTableAdapters {
                     string ContractorSkills, 
                     string ContractorOrganization, 
                     global::System.Nullable<int> HiredBy, 
+                    string ContractorComments, 
                     int Original_ContractorID, 
                     string Original_ContractorName, 
                     string Original_ContractorCity, 
@@ -7271,65 +7321,71 @@ namespace SSL.SSLDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_ContractorID));
+            if ((ContractorComments == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(ContractorComments));
+            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_ContractorID));
             if ((Original_ContractorName == null)) {
                 throw new global::System.ArgumentNullException("Original_ContractorName");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_ContractorName));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_ContractorName));
             }
             if ((Original_ContractorCity == null)) {
                 throw new global::System.ArgumentNullException("Original_ContractorCity");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_ContractorCity));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_ContractorCity));
             }
             if ((Original_ContractorState == null)) {
                 throw new global::System.ArgumentNullException("Original_ContractorState");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_ContractorState));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_ContractorState));
             }
             if ((Original_ContractorZip == null)) {
                 throw new global::System.ArgumentNullException("Original_ContractorZip");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_ContractorZip));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_ContractorZip));
             }
             if ((Original_ContractorPhone == null)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_ContractorPhone));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_ContractorPhone));
             }
             if ((Original_ContractorEmail == null)) {
                 throw new global::System.ArgumentNullException("Original_ContractorEmail");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_ContractorEmail));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_ContractorEmail));
             }
             if ((Original_ContractorOrganization == null)) {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_ContractorOrganization));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_ContractorOrganization));
             }
             if ((Original_HiredBy.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((int)(Original_HiredBy.Value));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((int)(Original_HiredBy.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 

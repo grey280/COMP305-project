@@ -39,5 +39,11 @@ namespace SSL
             MaintainEquipment frmMaintainEquipment = new MaintainEquipment();
             frmMaintainEquipment.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EvaluateContractor frmEvaluateContractor = new EvaluateContractor();
+            frmEvaluateContractor.Show();
+        }
     }
 }
