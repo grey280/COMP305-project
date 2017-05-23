@@ -19,8 +19,8 @@ namespace SSL
 
         private void button6_Click(object sender, EventArgs e)
         {
-            CustomerReport frmCustomerReport = new CustomerReport();
-            frmCustomerReport.Show();
+            //CustomerReport frmCustomerReport = new CustomerReport();
+            //frmCustomerReport.Show();
         }
     }
 }

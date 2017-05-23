@@ -89,6 +89,12 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaintainEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintainEquipment.Designer.cs">
+      <DependentUpon>MaintainEquipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageContractors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintainEquipment.resx">
+      <DependentUpon>MaintainEquipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageContractors.resx">
       <DependentUpon>ManageContractors.cs</DependentUpon>

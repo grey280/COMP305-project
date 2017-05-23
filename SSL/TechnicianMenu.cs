@@ -33,5 +33,11 @@ namespace SSL
             Installation frmInstallation = new Installation();
             frmInstallation.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MaintainEquipment frmMaintainEquipment = new MaintainEquipment();
+            frmMaintainEquipment.Show();
+        }
     }
 }
