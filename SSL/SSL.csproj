@@ -59,17 +59,35 @@
     <Compile Include="Consultation.Designer.cs">
       <DependentUpon>Consultation.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultationReport.Designer.cs">
+      <DependentUpon>ConsultationReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultationsRpt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConsultationsRpt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomersReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersReport.Designer.cs">
+      <DependentUpon>CustomersReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersRpt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomersRpt.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesReport.Designer.cs">
+      <DependentUpon>EmployeesReport.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeesRpt.cs">
       <AutoGen>True</AutoGen>
@@ -89,6 +107,12 @@
     <Compile Include="ExecutiveMenu.Designer.cs">
       <DependentUpon>ExecutiveMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoursReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoursReport.Designer.cs">
+      <DependentUpon>HoursReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoursRpt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +125,12 @@
     <Compile Include="Installation.Designer.cs">
       <DependentUpon>Installation.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallationsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallationsReport.Designer.cs">
+      <DependentUpon>InstallationsReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstallationsRpt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,6 +142,12 @@
     </Compile>
     <Compile Include="InvoiceForm.Designer.cs">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoicesReport.Designer.cs">
+      <DependentUpon>InvoicesReport.cs</DependentUpon>
     </Compile>
     <Compile Include="InvoicesRpt.cs">
       <AutoGen>True</AutoGen>
@@ -181,6 +217,12 @@
       <DependentUpon>RentalRpt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RentalsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalsReport.Designer.cs">
+      <DependentUpon>RentalsReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="RentalsReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,13 +249,22 @@
     <EmbeddedResource Include="Consultation.resx">
       <DependentUpon>Consultation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultationReport.resx">
+      <DependentUpon>ConsultationReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultationsRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ConsultationsRpt.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomersReport.resx">
+      <DependentUpon>CustomersReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomersRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CustomersRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesReport.resx">
+      <DependentUpon>EmployeesReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeesRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -225,6 +276,9 @@
     <EmbeddedResource Include="ExecutiveMenu.resx">
       <DependentUpon>ExecutiveMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoursReport.resx">
+      <DependentUpon>HoursReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoursRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>HoursRpt.cs</LastGenOutput>
@@ -232,12 +286,18 @@
     <EmbeddedResource Include="Installation.resx">
       <DependentUpon>Installation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstallationsReport.resx">
+      <DependentUpon>InstallationsReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstallationsRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InstallationsRpt.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicesReport.resx">
+      <DependentUpon>InvoicesReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoicesRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -282,6 +342,9 @@
     <EmbeddedResource Include="RentalRpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RentalRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalsReport.resx">
+      <DependentUpon>RentalsReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RentalsReportForm.resx">
       <DependentUpon>RentalsReportForm.cs</DependentUpon>
