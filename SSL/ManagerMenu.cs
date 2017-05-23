@@ -22,5 +22,11 @@ namespace SSL
             RentalsReportForm frmRentalsReport = new RentalsReportForm();
             frmRentalsReport.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManageCustomer frmManageCustomer = new ManageCustomer();
+            frmManageCustomer.Show();
+        }
     }
 }
