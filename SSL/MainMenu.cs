@@ -27,5 +27,11 @@ namespace SSL
             InvoiceForm frmInvoice = new InvoiceForm();
             frmInvoice.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LogHours frmLogHours = new LogHours();
+            frmLogHours.Show();
+        }
     }
 }
