@@ -21,5 +21,11 @@ namespace SSL
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Consultation frmConsultation = new Consultation();
+            frmConsultation.Show();
+        }
     }
 }
