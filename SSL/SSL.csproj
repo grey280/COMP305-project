@@ -77,11 +77,23 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageContractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageContractors.Designer.cs">
+      <DependentUpon>ManageContractors.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageCustomer.Designer.cs">
       <DependentUpon>ManageCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEmployee.Designer.cs">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerMenu.cs">
       <SubType>Form</SubType>
@@ -126,8 +138,14 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageContractors.resx">
+      <DependentUpon>ManageContractors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageCustomer.resx">
       <DependentUpon>ManageCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployee.resx">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerMenu.resx">
       <DependentUpon>ManagerMenu.cs</DependentUpon>

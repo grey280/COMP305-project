@@ -28,5 +28,17 @@ namespace SSL
             ManageCustomer frmManageCustomer = new ManageCustomer();
             frmManageCustomer.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ManageEmployee frmManageEmployee = new ManageEmployee();
+            frmManageEmployee.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ManageContractors frmManageContractor = new ManageContractors();
+            frmManageContractor.Show();
+        }
     }
 }
