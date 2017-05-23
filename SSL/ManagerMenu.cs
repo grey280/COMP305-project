@@ -40,5 +40,11 @@ namespace SSL
             ManageContractors frmManageContractor = new ManageContractors();
             frmManageContractor.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ManageEquipment frmManageEquipment = new ManageEquipment();
+            frmManageEquipment.Show();
+        }
     }
 }
